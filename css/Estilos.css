@@ -1,0 +1,478 @@
+section {
+  background-color: #1c1a1a;
+}
+/*CARUSEL*/
+.pastas__fotos {
+  width: 100%;
+  height: auto;
+}
+.pastas__carusel {
+  margin: 0px 70px;
+}
+
+.pastas__texto {
+  font-family: "Prata", serif;
+
+  color: white;
+  font-size: 75px;
+  display: block;
+  padding: 25px;
+  position: absolute;
+  top: 295px;
+  left: 27vw;
+}
+.pastas__texto2 {
+  font-family: "roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 410px;
+  left: 34vw;
+}
+.pastas__portada2{
+  display: none;
+}
+/*HEADER*/
+.pastas__header {
+  box-sizing: border-box;
+  height: 70px;
+  overflow: hidden;
+  background-color: #1c1a1a;
+  position: sticky;
+  transition: background-color 0.5s ease-in-out;
+  top: 0px;
+  z-index: 10000;
+}
+.pastas__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+#tres{
+  display: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 21212121;
+}
+.pastas__boton {
+  display: inline-block;
+  padding: 15px;
+}
+.pastas__hmb{
+  width: 30px;
+  height: auto;
+  display: none;
+  float: right;
+}
+.pastas__link {
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+.pastas__a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.pastas__a:hover {
+  text-decoration: none;
+  color: white;
+}
+.pastas__link:hover {
+  text-decoration: none;
+  color: grey;
+}
+/*SECTION */
+.pastas__texto3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 300px;
+  padding: 5px;
+  position: relative;
+}
+.pastas__parrafo {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: grey;
+  display: block;
+  margin: 0px 400px;
+  padding: 40px;
+}
+.pastas__boton2 {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  top: auto;
+  left: 40vw;
+  margin-top: 15px;
+  padding: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/*LAYOUT*/
+.pastas__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  column-gap: 10px;
+  grid-gap: 20px;
+  margin: 0px 200px;
+  /*: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0px 200px;*/
+}
+.pastas__fotosLay {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  transition: 0.5 ease;
+  backface-visibility: hidden;
+}
+.txt {
+  background-color: green;
+  color: rgb(5, 2, 2);
+  text-align: center;
+  height: 100px;
+  padding: 25px;
+  transition: 0.9s ease;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 0.9s ease;
+}
+.foto:hover .txt {
+  opacity: 0.8;
+}
+.foto:hover .pastas__fotosLay {
+  opacity: 0.5;
+}
+.pastas__boton2:hover {
+  background: grey;
+  color: black;
+}
+/*MAPA*/
+.pastas__contact {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: block;
+  margin-top: 80px;
+}
+.pastas__mapa {
+  display: flex;
+  margin: 20px 370px;
+}
+.pastas__boton3 {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 50px;
+  width: 250px;
+  padding: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.pastas__boton3:hover {
+  background: grey;
+  color: black;
+}
+.pastas__botones{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/*FOOTER*/
+footer {
+  background-color: #1c1a1a;
+}
+.pastas__container {
+  margin: 10px;
+}
+.pastas__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas:
+    "inst redes links";
+  /*display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 5px;*/
+}
+.pastas__inst{
+  grid-area: inst;
+}
+.pastas__logo2{
+  width: 250px;
+  height: auto;
+  margin: 40px;
+  position: relative;
+}
+.pastas__desc{
+  text-align: justify;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+  margin-right: 180px;
+}
+.pastas__redes{
+  grid-area: redes;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 250px;
+  position: relative;
+}
+.pastas__ig{
+  width: 40px;
+  height: auto;
+  margin: 0px 35px;
+}
+.pastas__fb{
+  width: 40px;
+  height: auto;
+
+}
+.pastas__contacto{
+  grid-area: links;
+
+}
+.pastas__contacto p{
+  box-sizing: content-box;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  display: block;
+  margin: 100px 100px;
+}
+.pastas__links{
+  grid-area: links;
+}
+.pastas__fute{
+  list-style: none;
+  display: block;;
+  margin: 30px 0px 50px;
+  padding: 20px;
+}
+.pastas__texto4{
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+ 
+}
+.pastas__link3{
+  color: white;
+  text-decoration: none;
+  text-align: right;
+}
+.pastas__texto5{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 20px;
+}
+footer hr{
+  border: solid 1px rgb(155, 155, 155);
+}
+
+@media only screen and   (max-width: 450px ){
+  *{
+    max-width: 400px;
+  }
+  .pastas__carusel{
+    display: none;
+  }
+  .pastas__portada2{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .pastas__header {
+    display: none;
+  }
+  .pastas__nav{
+    display: none;
+  }  
+  #tres{
+    display: block;
+  }
+  .pastas__hmb{
+      display:none;
+  }
+  .pastas__a {
+display: none;
+  }
+  .pastas__link {
+  display: none;
+  }
+  .pastas__texto3 {
+      font-size: 35px;
+      margin-top: 40px;
+  }
+  .pastas__parrafo {
+      font-size: 13px;
+      margin: 0px 40px;
+      padding: 40px;  
+  }
+  .pastas__boton2 {
+        width: 150px;
+        left: 30vw;
+        margin-top: 1px;
+        margin-bottom: 10px;
+  }
+  .pastas__layout {
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows:300px 300px 300px 300px 300px ;
+    row-gap: 10px;
+    margin: 10px 40px;
+  }
+  .pastas__fotosLay {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transition: 0.5 ease;
+    backface-visibility: hidden;
+  }
+  .txt {
+    padding: 20px;
+  }
+  .pastas__contact {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .pastas__mapa {
+    display: none;
+  }
+  .pastas__boton3 {
+    margin: 10px 10px;
+    width: 150px;
+  }
+  .pastas__footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 150px;
+  }
+  .pastas__inst{
+    display: none;
+  }
+  .pastas__logo2{
+  display: none;
+  }
+  .pastas__redes{
+    margin-top: 15px;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    margin-top: 135px;
+  }
+  .pastas__ig{
+    width: 30px;
+    height: auto;
+
+  }
+  .pastas__fb{
+    width: 30px;
+    height: auto;
+  }
+  .pastas__contacto p{
+    font-size: 12px;
+    margin: 10px 40px;
+  }
+  .pastas__texto5{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+}
+/*.pastas__logo2 {
+
+  grid-area: logo;
+  width: 240px;
+  height: auto;
+}
+.pastas__desc {
+  grid-area: desc;
+  font-size: 12px;
+  text-align: justify;
+  color: white;
+  margin-right: 800px;
+}
+.pastas__redes {
+  grid-area: redes;
+}
+.pastas__links {
+  grid-area: links;
+}
+.pastas__fut {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+.pastas__texto4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.pastas__ig {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  color: white;
+}
+.pastas__fb {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+.pastas__fute {
+  list-style: none;
+}
+.pastas__link3 {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.pastas__link3:hover {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+.pastas__texto5 {
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  grid-area: copi;
+}
+.pastas__container hr {
+  border-top-color: white;
+  opacity: 0.5;
+}
